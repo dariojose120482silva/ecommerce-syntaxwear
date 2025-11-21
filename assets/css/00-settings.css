@@ -1,6 +1,2 @@
-/* 00-settings.css - LIMPO */
-/* Arquivo limpo: coloque aqui variáveis e resets quando necessário. */
-
-:root {}
-
-*{box-sizing:border-box}
+/* 00-settings.css - sem estilização */
+/* Arquivo intencionalmente vazio para remover toda a estilização global. */
