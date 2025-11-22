@@ -18,3 +18,29 @@ Como usar:
 Autor: dariojose120482silva
 
 Data: 20 de novembro de 2025
+
+- **Estrutura HTML semântica criada:**  
+  - Adição das seções principais: `<header>`, `<main>`, `<footer>`, `<section class="hero">`, `<section class="featured">`, `<section class="product-grid">`.
+  - Uso de classes BEM com traço para padronização.
+
+- **Reset CSS moderno:**  
+  - Implementação do reset Andy Bell para garantir consistência visual entre navegadores.
+
+- **Fontes personalizadas:**  
+  - Importação de fontes do Google Fonts via CSS.
+  - Definição da variável `--fonte-principal` para uso global.
+
+- **Favicon:**  
+  - Adição das linhas para favicon SVG e ICO no `<head>`.
+  - Orientações sobre como limpar o cache do navegador e visualizar o favicon atualizado.
+
+- **Organização dos arquivos CSS:**  
+  - Ordem correta de importação dos arquivos CSS no HTML para garantir funcionamento das variáveis e estilos.
+
+- **Dicas de navegação e manutenção:**  
+  - Instruções para abrir o site em aba anônima e limpar o cache do navegador.
+  - Explicação sobre possíveis problemas de exibição do favicon.
+
+---
+
+Essas alterações garantem uma base sólida, semântica e moderna para o desenvolvimento do e-commerce SyntaxWear.
