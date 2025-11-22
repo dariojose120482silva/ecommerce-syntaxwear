@@ -1,0 +1,5 @@
+/* 01-base.css - sem estilização */
+/* Arquivo intencionalmente vazio para remover estilos base. */
+body {
+  font-family: var(--fonte-principal);
+}
