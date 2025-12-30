@@ -1,0 +1,122 @@
+/* Configuração da Barra Principal */
+/* Configuração da Barra Principal */
+.header {
+    position: fixed;
+    top: 60px;
+    left: 100px;
+    right: 100px;
+    height: 50px;
+    background: #feeeee;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui as pontas */
+    padding: 0 25px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo img {
+    /* Ajuste este valor para o tamanho desejado */
+    height: 40px; 
+    
+    /* Largura automática para não achatar a logo */
+    width: auto; 
+    
+    /* Garante que a logo apareça inteira sem cortes */
+    object-fit: contain; 
+    
+    /* Suaviza a renderização de imagens vetoriais */
+    display: block;
+    image-rendering: auto;
+}
+
+/* Ajuste opcional para o h1 não criar espaços extras */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Centralização Matemática do Nav-Center */
+.nav-center {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    gap: 100px;
+}
+
+.nav-center ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+/* Estilo das Listas (Geral) */
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 50px; /* Espaçamento entre os links */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-center a, .nav-right a {
+    display: flex;
+    color: rgb(51, 51, 51);
+    transition: color 0.3s ease;
+}
+
+/* --- ESTILIZAÇÃO DOS LINKS (Nav Center e Nav Right) --- */
+.nav-center a, .nav-right a {
+    text-decoration: none;
+    color: rgba(51, 51, 51, 1);
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+/* Hover simples individual para cada link */
+.nav-center a:hover, .nav-right a:hover {
+    color: #a757f7; /* Roxo claro (Purple 400) */
+}
+
+/* --- ESTILIZAÇÃO DOS ÍCONES (Nav Right) --- */
+.nav-right a img, .nav-right a svg {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+}
+
+/* Elevação suave e opacidade ao passar o mouse ou clicar */
+.nav-right a:hover img, 
+.nav-right a:active img,
+.nav-right a:hover svg,
+.nav-right a:active svg {
+    transform: translateY(-3px); /* Elevação bem suave */
+    opacity: 0.6;                 /* Diminui a opacidade */
+}
+
+ .menu-icon, .menu-toggle {
+    display: none;
+}
+
+
+/* Nav da Direita (Links + Ícones) */
+.nav-right ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 45px;
+  
+}
+
+/* Ícones */
+.nav-right img {
+    width: 22px;
+    height: auto;
+    display: block;
+}

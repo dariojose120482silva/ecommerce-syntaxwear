@@ -1,0 +1,100 @@
+.hero-section {
+
+    background: url(../../img/banners/grid-card.png) no-repeat center;
+    height: 600px;
+    position: relative;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* Alinha verticalmente ao centro */
+    align-items: center; 
+    /* Empurra todo o conteúdo para a direita */
+    justify-content: flex-end; 
+    /* Aqui você define a "margem" da direita (ex: 80px ou 5rem) */
+   /* APLICAÇÃO DOS ESPAÇAMENTOS EM REM */
+    /* Ordem: Topo | Direita | Rodapé | Esquerda */
+    padding: 11.3rem 7.5rem 7.5rem 53.25rem; 
+    
+}
+
+.hero-content {
+    color: #ededed;
+    /* CORREÇÃO: Aumente o max-width para o texto caber (ex: 450px) */
+    max-width: 300px; 
+    /* Alinha o texto à esquerda ou direita dentro do bloco */
+    text-align: right; 
+    display: flex;
+   flex-direction: column;
+    /* Alinha os itens (subtitle, h2, buttons) à direita */
+    align-items: center; 
+    text-align: center;
+
+
+}
+
+.hero-subtitle {
+   /* MUDANÇA AQUI: Garante que ele ocupe a linha toda e aceite centralização */
+    display: block; 
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 350;
+ 
+}
+
+ .hero-title{
+    font-size: 1.5rem;
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 350;
+}
+
+
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    /* Garante que os botões fiquem um ao lado do outro */
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 660px;
+        background-image: url(../../img/banners/hero-mobile.png);
+    }
+    
+    .hero-overlay {
+        padding: 0;
+    }
+
+    .hero-content .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-content .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-content {
+        min-width: 330px;
+        margin: 0 auto;
+    }
+
+    .btn{
+        font-size: 1.2rem;
+    }
+
+}
+

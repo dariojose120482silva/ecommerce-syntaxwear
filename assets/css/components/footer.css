@@ -1,0 +1,174 @@
+.site-footer {
+    /*Definindo o fundo e cor do texto do footer*/
+    background-color: #333333;
+    /* Cor do texto para contraste com o fundo escuro */
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    min-width: 1440px;
+    height: 335px;
+
+}
+
+
+
+
+
+.footer-content {
+    /* Centraliza o conteúdo e define uma largura máxima */
+    max-width: 1360px;
+    /*Define a margem e padding do conteúdo do footer*/
+    margin: 0 auto;
+    /* Espaçamento interno para evitar que o conteúdo encoste nas bordas */
+    padding: 40px;
+    /* Usa Flexbox para layout horizontal */
+    display: flex;
+    /* Justifica o conteúdo com espaço entre os elementos */
+    justify-content: space-between;
+
+
+}
+
+
+
+.footer-right {
+    /* Define a seção direita do footer como um contêiner flexível */
+    display: flex;
+    /* Define a direção do contêiner flexível como coluna */
+    flex-direction: column;
+    /* Alinha os itens ao final da seção */
+
+
+
+    /* Espaçamento entre os elementos da seção */
+    gap: 3.125rem;
+}
+
+
+.newsletter-form {
+    /* Define o formulário como um contêiner flexível */
+    display: flex;
+    /* Alinha os itens ao centro verticalmente */
+    flex-direction: column;
+    /* Espaçamento entre os elementos do formulário */
+    gap: 0.5rem;
+}
+
+.newsletter-input-group {
+    /* Define o grupo de entrada como um contêiner flexível */
+    display: flex;
+    border: 1px solid #ffffff;
+    /* Ajusta o raio das bordas */
+    border-radius: 8px;
+    /* Garante que o input e o botão tenham a mesma altura */
+    padding: 0.2rem;
+    background-color: #ffffff;
+    width: 400px;
+}
+
+.newsletter-form input {
+    /* Remove as bordas padrão do input */
+    border: none;
+    /* Permite que o input cresça para preencher o espaço disponível */
+    flex-grow: 1;
+    /* Adiciona espaçamento interno ao input */
+    padding: 0.5rem;
+    /* Define a cor do texto do input */
+    color: #aaaaaa;
+}
+
+.newsletter-input:focus {
+    outline: none;
+}
+
+.newsletter-form button {
+    /* Define o botão como um contêiner flexível */
+    display: flex;
+    /* Define a cor de fundo do botão */
+    background-color: #ffffff;
+    /* Define a cor do texto do botão */
+    color: #3a39397d;
+    /* Remove as bordas padrão do botão */
+    border: none;
+    /* Adiciona espaçamento interno ao botão */
+    padding: 0.5rem 1rem;
+    /* Define o cursor como pointer ao passar o mouse sobre o botão */
+    cursor: pointer;
+    /* Ajusta o raio das bordas do botão */
+    border-radius: 8px;
+    /* Define a espessura da fonte do botão */
+    font-weight: bold;
+    /* Centraliza o conteúdo do botão */
+    align-items: center;
+    /* Centraliza o texto do botão */
+    justify-content: center;
+}
+
+.footer-social span {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social li a:hover img {
+    opacity: 0.7;
+}
+
+
+/* Espaçamento HORIZONTAL de 19px entre as colunas principais */
+.footer-nav ul {
+    display: flex;
+    /* TORNA esta lista um contêiner flex */
+    gap: 3.1995rem;
+    /* Adicione 'list-style: none;' aqui se quiser remover os marcadores de lista */
+}
+
+/* Estilização para as sub-listas aninhadas (os links) */
+.footer-nav ul ul {
+    display: flex;
+    /* TORNA esta lista um contêiner flex */
+    flex-direction: column;
+    /* Os itens aninhados são exibidos em coluna */
+
+    /* Certifique-se de que não há margens padrão */
+    gap: 1.1875rem;
+    /* Aplica o espaçamento VERTICAL de 19px entre os links */
+}
+
+/* Remova os marcadores de lista em todos os ULs se necessário */
+.footer-nav ul .footer-nav ul ul {
+    font-size: 0.995rem;
+    line-height: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li a {
+    color: #ffffff;
+}
+
+.footer-nav strong {
+    display: block;
+    color: #d1cfcf;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-copy {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff
+}
+

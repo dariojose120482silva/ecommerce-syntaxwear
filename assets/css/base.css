@@ -1,0 +1,57 @@
+/* 01-base.css - sem estilização */
+/* Arquivo intencionalmente vazio para remover estilos base. */
+body {
+    font-family: var(--fonte-principal, 'Ubuntu', sans-serif);
+
+}
+
+main {
+    padding: 2.5rem 0 0;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+
+
+
+.btn {
+    font-size: 1.25rem;
+    /*Define o tamanho da fonte do texto dentro do botão. */
+    width: 161px;
+    /*Define a largura fixa do botão em pixels. */
+    height: 48px;
+    /*Define a altura fixa do botão em pixels. */
+
+    border-radius: 25px;
+    /*Arredonda os cantos do botão, criando uma forma mais suave. */
+    color: #fff;
+    /*Define a cor do texto dentro do botão como branco. */
+    transition: background-color 0.3s, border 0.3s;
+    /*Adiciona uma transição suave para as mudanças de cor de fundo e cor do texto ao passar o mouse sobre o botão. */
+    line-height: 23px;
+    /*Define a altura da linha do texto dentro do botão, ajudando a centralizar verticalmente o texto. */
+}
+
+
+.btn-outline {
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 10px 20px;
+    /*Define o preenchimento interno (espaço entre o conteúdo e a borda) do botão: 10px no topo/fundo e 20px nas laterais. */
+
+}
+
+.btn-filled {
+    background-color: #fff;
+    color: #6329a2;
+    padding: 10px 20px;
+    /*Define o preenchimento interno (espaço entre o conteúdo e a borda) do botão: 10px no topo/fundo e 20px nas laterais. */
+}
+
+.btn:hover {
+    background-color: #6329a2;
+    color: #fff;
+    border-color: #6329a2;
+
+}
+

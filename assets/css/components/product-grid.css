@@ -1,0 +1,110 @@
+.card {
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+.highlight {
+    grid-area: highlight;
+    background-image: url(../../img/banners/Gemini_Generated_Image_kjm3vvkjm3vvkjm3\ \(2\).png);
+
+}
+
+.sneaker-purple {
+    grid-area: sneaker-purple;
+    background-image: url(../../img/banners/esportivo.jpg);
+
+
+}
+
+.model {
+    grid-area: model;
+    background-image: url(../../img/banners/modelo-feminino.jpg);
+
+
+}
+
+.sneaker-color {
+    grid-area: sneaker-color;
+    background-image: url(../../img/banners/futurista-grid.jpg);
+
+}
+
+.sneaker-white {
+    grid-area: sneaker-white;
+    background-image: url(../../img/banners/preto-azul-grid.jpg);
+
+}
+
+.sneaker-silver {
+    grid-area: sneaker-silver;
+    background-image: url(../../img/banners/moderno-grid.jpg);
+
+}
+
+.grid-section {
+    /*Define o layout da seção de grade de produtos */
+    display: grid;
+    /*Define o número de colunas e linhas da grade */
+    grid-template-columns: repeat(4, 1fr);
+    /*Define o número de colunas e linhas da grade */
+    grid-template-rows: repeat(3, 300px);
+    /*Define as áreas da grade */
+    grid-template-areas:
+        "highlight highlight sneaker-purple sneaker-purple"
+        "highlight highlight model sneaker-color"
+        "sneaker-white sneaker-white model sneaker-silver";
+    /*Define o espaçamento entre os itens da grade */
+    gap: 20px;
+    /*Define a margem ao redor da seção de grade */
+    margin: 40px 0;
+}
+
+.card1-content {
+    /*Define a posição do conteúdo do cartão */
+    position: relative;
+    /*Define a posição horizontal */
+    left: 50%;
+    /*Define a posição vertical */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*Centraliza o conteúdo tanto horizontalmente quanto verticalmente */
+    text-align: center;
+    /*Alinha o texto ao centro */
+}
+
+.card-title {
+    /*Define a cor do título do cartão */
+    color: #ededed;
+    /*Define o tamanho da fonte do título do cartão */
+    font-size: 1.25rem;
+    /*Define o peso da fonte do título do cartão */
+    font-weight: 300;
+    /*Define o espaçamento entre as letras do título do cartão */
+    line-height: 36px;
+    /*Define a margem inferior do título do cartão */
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    /*Define a cor do subtítulo do cartão */
+    color: #ededed;
+    /*Define o tamanho da fonte do subtítulo do cartão */
+    font-size: 1.5rem;
+    /*Define o peso da fonte do subtítulo do cartão */
+    font-weight: 300;
+    /*Define a margem inferior do subtítulo do cartão */
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.cta-group {
+    /*Define o layout do grupo de chamadas para ação (botões) */
+    display: flex;
+    /*Define o espaçamento entre os botões */
+    gap: 10px;
+    /*Centraliza os botões horizontalmente */
+    justify-content: center;
+}
