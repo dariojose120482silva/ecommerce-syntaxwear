@@ -1,12 +1,14 @@
 .site-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     /*Definindo o fundo e cor do texto do footer*/
     background-color: #333333;
     /* Cor do texto para contraste com o fundo escuro */
     color: #ffffff;
     align-items: center;
-    justify-content: center;
-    min-width: 1440px;
-    height: 335px;
+    min-width: 278.4px;
+    min-height: 347px;
 
 }
 
@@ -15,6 +17,7 @@
 
 
 .footer-content {
+    width: 100%;
     /* Centraliza o conteúdo e define uma largura máxima */
     max-width: 1360px;
     /*Define a margem e padding do conteúdo do footer*/
@@ -166,9 +169,26 @@
 
 
 .footer-copy {
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 20px 0;
-    color: #ffffff
+  width: 100%;
+  max-width: 1360px;
+  height: 65px;
+  margin: 270 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  border-top: 1px solid rgba(229, 223, 223, 0.66);
+  box-sizing: border-box;
 }
+
+
+.footer-copy p {
+    margin: 0;
+    font-size: 1.25rem;
+    /* No Figma, se o texto estiver centralizado na tela, use 'center'. 
+       Se ele estiver alinhado com o conteúdo da esquerda, use 'left'. */
+    text-align: center; 
+    width: 100%;
+}
+
 
