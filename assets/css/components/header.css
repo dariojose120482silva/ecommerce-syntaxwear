@@ -1,122 +1,354 @@
 /* Configuração da Barra Principal */
-/* Configuração da Barra Principal */
+
 .header {
+
     position: fixed;
+
     top: 60px;
+
     left: 100px;
+
     right: 100px;
+
     height: 50px;
+
     background: #feeeee;
+
     border-radius: 8px;
+
     display: flex;
+
     align-items: center;
-    justify-content: space-between; /* Distribui as pontas */
+
+    justify-content: space-between;
+
+    /* Distribui as pontas */
+
     padding: 0 25px;
+
     z-index: 1000;
+
     box-sizing: border-box;
+
 }
 
 .logo img {
+
     /* Ajuste este valor para o tamanho desejado */
-    height: 40px; 
-    
+
+    height: 40px;
+
     /* Largura automática para não achatar a logo */
-    width: auto; 
-    
+
+    width: auto;
+
     /* Garante que a logo apareça inteira sem cortes */
-    object-fit: contain; 
-    
+
+    object-fit: contain;
+
     /* Suaviza a renderização de imagens vetoriais */
+
     display: block;
+
     image-rendering: auto;
+
 }
 
 /* Ajuste opcional para o h1 não criar espaços extras */
+
 .logo {
+
     display: flex;
+
     align-items: center;
+
     margin: 0;
+
     padding: 0;
+
 }
 
-
-
 /* Centralização Matemática do Nav-Center */
+
 .nav-center {
+
     position: absolute;
+
     left: 40%;
+
     transform: translateX(-50%);
+
     gap: 100px;
+
 }
 
 .nav-center ul {
+
     display: flex;
+
     list-style: none;
+
     gap: 30px;
+
     margin: 0;
+
     padding: 0;
+
     align-items: center;
-}
-/* Estilo das Listas (Geral) */
-.header ul {
-    display: flex;
-    list-style: none;
-    gap: 50px; /* Espaçamento entre os links */
-    margin: 0;
-    padding: 0;
-    align-items: center;
+
 }
 
-.nav-center a, .nav-right a {
+/* Estilo das Listas (Geral) */
+
+.header ul {
+
     display: flex;
+
+    list-style: none;
+
+    gap: 50px;
+
+    /* Espaçamento entre os links */
+
+    margin: 0;
+
+    padding: 0;
+
+    align-items: center;
+
+}
+
+.nav-center a,
+
+.nav-right a {
+
+    display: flex;
+
     color: rgb(51, 51, 51);
+
     transition: color 0.3s ease;
+
 }
 
 /* --- ESTILIZAÇÃO DOS LINKS (Nav Center e Nav Right) --- */
-.nav-center a, .nav-right a {
+
+.nav-center a,
+
+.nav-right a {
+
     text-decoration: none;
+
     color: rgba(51, 51, 51, 1);
-    transition: color 0.3s ease; /* Transição suave da cor */
+
+    transition: color 0.3s ease;
+
+    /* Transição suave da cor */
+
 }
 
 /* Hover simples individual para cada link */
-.nav-center a:hover, .nav-right a:hover {
-    color: #a757f7; /* Roxo claro (Purple 400) */
+
+.nav-center a:hover,
+
+.nav-right a:hover {
+
+    color: #a757f7;
+
+    /* Roxo claro (Purple 400) */
+
 }
 
 /* --- ESTILIZAÇÃO DOS ÍCONES (Nav Right) --- */
-.nav-right a img, .nav-right a svg {
+
+.nav-right a img,
+
+.nav-right a svg {
+
     transition: transform 0.3s ease, opacity 0.3s ease;
+
     display: block;
+
 }
 
 /* Elevação suave e opacidade ao passar o mouse ou clicar */
-.nav-right a:hover img, 
+
+.nav-right a:hover img,
+
 .nav-right a:active img,
+
 .nav-right a:hover svg,
+
 .nav-right a:active svg {
-    transform: translateY(-3px); /* Elevação bem suave */
-    opacity: 0.6;                 /* Diminui a opacidade */
-}
 
- .menu-icon, .menu-toggle {
-    display: none;
-}
+    transform: translateY(-3px);
 
+    /* Elevação bem suave */
+
+    opacity: 0.6;
+
+    /* Diminui a opacidade **/
+
+}
 
 /* Nav da Direita (Links + Ícones) */
+
 .nav-right ul {
+
     display: flex;
+
     align-items: center;
+
     text-align: center;
+
     gap: 45px;
-  
+
 }
 
 /* Ícones */
+
 .nav-right img {
+
     width: 22px;
+
     height: auto;
+
     display: block;
+
+}
+
+.menu-toggle {
+
+    display: none;
+
+}
+
+.menu-icon {
+
+    display: none;
+
+}
+
+.menu-icon {
+
+    width: 30px;
+
+    height: 30px;
+
+}
+
+.menu-icon img {
+
+    width: 100%;
+
+    height: 100%;
+
+    transition: opacity 0.3s ease;
+
+}
+
+.menu-icon:hover img {
+
+    opacity: 0.7;
+
+}
+
+
+
+@media (max-width: 1280px) {
+
+    /* 1. Lógica do Hambúrguer */
+    .menu-toggle {
+        display: none;
+        /* Esconde o check real */
+    }
+
+    .menu-icon {
+        display: block;
+        /* Mostra o ícone no header */
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    /* 2. O Container do Menu (O volume único) */
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        /* Escondido por padrão */
+        width: 220px;
+        height: calc(95.6vh - 60px);
+        background-color: #feeeee;
+        transition: right 0.3s ease-in-out;
+        padding: 80px 0 20px 0;
+        /* Removido para os links encostarem nas bordas */
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        gap: 20px;
+    }
+
+    .nav-center {
+        position: static;
+        transform: none;
+        left: auto;
+        display: block;
+        width: 100%;
+    }
+
+    /* 3. Unificando as Navs Internas */
+    .nav-center,
+    .nav-right {
+
+        display: block;
+        /* Força ocupação total */
+        gap: 0;
+
+    }
+
+    .nav-center ul,
+    .nav-right ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    /* 4. Estilização dos Links e Ícones (Sequência contínua) */
+    .nav-center li,
+    .nav-right li {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-center a,
+    .nav-right a {
+        display: flex;
+        align-items: center;
+        padding: 10px 25px;
+        /* Padding generoso para toque */
+        color: rgb(51, 51, 51 1);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(71, 69, 72, 0.133);
+        /* Linha divisória roxa */
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.95rem;
+
+    }
+
+    /* Ajuste para os ícones ficarem bem no bloco */
+    .nav-right a img {
+        width: 24px;
+        margin-right: 15px;
+        /* Espaço entre ícone e possível texto */
+    }
+
+    /* 5. Gatilho de abertura */
+    .menu-toggle:checked~.nav-container {
+        right: 0;
+    }
 }
