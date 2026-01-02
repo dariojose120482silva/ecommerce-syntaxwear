@@ -256,6 +256,12 @@
 
 @media (max-width: 1280px) {
 
+    .header {
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+
     /* 1. Lógica do Hambúrguer */
     .menu-toggle {
         display: none;
