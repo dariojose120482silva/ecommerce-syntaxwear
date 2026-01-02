@@ -8,7 +8,7 @@
 
 .highlight {
     grid-area: highlight;
-    background-image: url(../../img/banners/Gemini_Generated_Image_kjm3vvkjm3vvkjm3\ \(2\).png);
+    background-image: url(../../img/banners/card_imagem.jpg);
 
 }
 
@@ -108,3 +108,28 @@
     /*Centraliza os botões horizontalmente */
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneaker-color"
+            "model sneaker-silver"
+            "sneaker-purple sneaker-purple";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+    .highlight {
+        min-height: 500px;
+    }
+    .model{
+        min-height: 370px;
+    }
+    .sneaker-white, .sneaker-purple {
+        min-height:   190px;
+    }
+    
+    }
