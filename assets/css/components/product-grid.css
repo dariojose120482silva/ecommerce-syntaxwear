@@ -125,9 +125,11 @@
     .highlight {
         min-height: 500px;
     }
+
     .model{
         min-height: 370px;
     }
+    
     .sneaker-white, .sneaker-purple {
         min-height:   190px;
     }
